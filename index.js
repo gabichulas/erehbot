@@ -14,11 +14,10 @@ client.on('message', (message) => {
     if (message.content === 'e!help') {
         const embed = new MessageEmbed()
             .setTitle('Comandos')
-            .setColor('RED')
-            .addField('Comandos en proceso...', 'hoola')
+            .setColor('DARK_GREEN')
+            .setDescription("`The prefix is e!`")
+            .addField('Commands', '...')
             message.channel.send(embed);
-
-
     }
 });
 client.login(process.env.token);
